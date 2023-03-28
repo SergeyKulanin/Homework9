@@ -11,11 +11,10 @@ FindGreatestCommonDivisor(M, N);
 void FindGreatestCommonDivisor(int M, int N)
 {
  if (M > N) M = M - N;
-        if (M == 0)
+        if (N == 0)
         {
             Console.WriteLine($"Наибольший общий делитель равен {M}");
             return;
         } 
         FindGreatestCommonDivisor(M, N);
 }
-
